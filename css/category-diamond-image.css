@@ -1,0 +1,16 @@
+/* Usa o asset local fornecido para todos os ícones de diamante. */
+.diamond-shape {
+  width: 22px !important;
+  height: 22px !important;
+  flex: 0 0 22px;
+  clip-path: none !important;
+  transform: none !important;
+  background: url('/img/point.png') center / contain no-repeat !important;
+  box-shadow: none !important;
+}
+
+.redeem-row .diamond-shape {
+  width: 21px !important;
+  height: 21px !important;
+  flex-basis: 21px;
+}

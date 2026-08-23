@@ -1,0 +1,142 @@
+/* Ajustes locais da referência: nenhum login externo, toast ou checkout é inserido aqui. */
+.toast,
+.local-state {
+  display: none !important;
+}
+
+.diamond-option {
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.05;
+}
+
+.diamond-option .diamond-topline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.diamond-price {
+  color: #666;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.reference-player-chip {
+  position: fixed;
+  z-index: 1002;
+  top: 17px;
+  right: max(18px, calc((100vw - 687px) / 2 + 22px));
+  display: none;
+  min-width: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 5px 7px 5px 5px;
+  border: 1px solid #ededed;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+  color: #343434;
+  font: 700 11px/1 Inter, Arial, sans-serif;
+}
+
+.reference-player-chip.is-visible { display: inline-flex; }
+.reference-player-chip img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e5241a;
+}
+.reference-player-chip span { max-width: 96px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.reference-promo-modal {
+  position: fixed;
+  z-index: 1200;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, .61);
+}
+.reference-promo-modal.is-open { display: flex; }
+.reference-promo-dialog { position: relative; width: min(100%, 620px); }
+.reference-promo-dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 18px 55px rgba(0,0,0,.45);
+}
+.reference-promo-close {
+  position: absolute;
+  z-index: 1;
+  top: -12px;
+  right: -12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #252525;
+  color: #fff;
+  font: 400 26px/1 Arial, sans-serif;
+}
+
+.reference-buy-bar {
+  position: fixed;
+  z-index: 1001;
+  right: max(12px, calc((100vw - 687px) / 2 + 14px));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  left: max(12px, calc((100vw - 687px) / 2 + 14px));
+  display: none;
+  align-items: center;
+  gap: 12px;
+  min-height: 70px;
+  padding: 10px 12px 10px 15px;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+  color: #262626;
+  font-family: Inter, Arial, sans-serif;
+}
+.reference-buy-bar.is-visible { display: flex; }
+.reference-buy-summary { display: grid; min-width: 0; gap: 3px; }
+.reference-buy-summary strong { font-size: 15px; }
+.reference-buy-summary span { color: #686868; font-size: 13px; font-weight: 600; }
+.reference-buy-bar button {
+  min-width: 108px;
+  min-height: 43px;
+  margin-left: auto;
+  border: 0;
+  border-radius: 6px;
+  background: #e5241a;
+  color: #fff;
+  font: 800 14px Inter, Arial, sans-serif;
+}
+.reference-buy-bar button:disabled { cursor: not-allowed; background: #b9b9b9; }
+.reference-buy-error {
+  position: absolute;
+  right: 14px;
+  bottom: calc(100% + 7px);
+  max-width: min(100%, 400px);
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: #fff4f3;
+  color: #bb251c;
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .reference-player-chip { top: 12px; right: 15px; }
+  .reference-player-chip span { max-width: 69px; font-size: 10px; }
+  .reference-promo-modal { padding: 16px; }
+  .reference-promo-close { top: -10px; right: -7px; }
+}

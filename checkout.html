@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Nebula Checkout</title>
+  <link rel="stylesheet" href="/css/checkout.css">
+</head>
+<body>
+  <main class="checkout-shell">
+    <header class="checkout-header">
+      <a class="brand" href="/checkout" aria-label="Nebula Checkout"><span class="brand-mark">N</span><span>Nebula <b>Checkout</b></span></a>
+      <span class="secure-note">Pagamento pela nossa plataforma</span>
+    </header>
+    <section class="checkout-card" aria-live="polite">
+      <div id="loading" class="loading">Preparando seu pedido seguro…</div>
+      <div id="missing-selection" class="missing is-hidden"><h1>Selecione seu pedido</h1><p>Volte à área de referência e escolha ID, pacote e PIX antes de continuar.</p><a href="/" class="button secondary">Voltar</a></div>
+      <div id="checkout-content" class="is-hidden">
+        <p class="eyebrow">PLATAFORMA INDEPENDENTE</p>
+        <h1 id="checkout-title">Revise seu pedido</h1>
+        <p class="subtitle">O pagamento é processado pela Nebula Checkout. A confirmação é feita somente pelo gateway.</p>
+        <div class="summary" id="summary"></div>
+        <button id="pay-button" class="button primary" type="button">Gerar PIX seguro</button>
+        <p id="checkout-error" class="error" role="alert"></p>
+      </div>
+      <div id="pix-content" class="is-hidden">
+        <p class="eyebrow">PAGAMENTO PIX</p>
+        <h1>Pague com Pix</h1>
+        <p id="pix-status" class="subtitle">Aguardando pagamento…</p>
+        <div class="pix-box"><img id="qr-code" class="is-hidden" alt="QR Code PIX"><div id="qr-unavailable" class="qr-fallback">QR Code disponível no aplicativo do seu banco pelo código abaixo.</div></div>
+        <p id="beneficiary" class="beneficiary"></p>
+        <label for="copy-paste">PIX Copia e Cola</label>
+        <textarea id="copy-paste" readonly aria-label="Código PIX Copia e Cola"></textarea>
+        <button id="copy-button" class="button secondary" type="button">Copiar código</button>
+        <p id="copy-feedback" class="feedback" aria-live="polite"></p>
+        <div class="status-summary" id="pix-summary"></div>
+      </div>
+    </section>
+    <footer>© Nebula Checkout · Plataforma de pagamento independente</footer>
+  </main>
+  <script src="/js/checkout.js"></script>
+</body>
+</html>
