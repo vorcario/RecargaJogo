@@ -1,0 +1,6 @@
+body { background: transparent; }
+.category-shell { padding: 0 30px 16px; }
+.category-shell .redeem-bonus { display: block; }
+.category-shell .payment-card, .category-shell .diamond-option, .category-shell .offer-card, .category-shell .redeem-row { cursor: pointer; }
+@media (max-width: 480px) { .category-shell { padding-left: 20px; padding-right: 20px; } }
+@media (max-width: 350px) { .category-shell { padding-left: 15px; padding-right: 15px; } }

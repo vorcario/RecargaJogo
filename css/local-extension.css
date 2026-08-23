@@ -1,0 +1,2 @@
+#local-content-extension { width: 100%; margin: 0; padding: 0; background: #fff; }
+#local-content-extension iframe { display: block; width: 100%; min-height: 2000px; border: 0; background: #fff; overflow: hidden; }

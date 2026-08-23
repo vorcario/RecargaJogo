@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mockup local de recarga — apenas demonstração visual." />
+    <title>Canal Oficial de Recarga — Demonstração</title>
+    <link rel="icon" href="img/006.ico" />
+    <link rel="stylesheet" href="css/mockup.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="#top" aria-label="Início">
+            <img class="brand-logo" src="img/garena_logo.png" alt="Garena" />
+            <span class="brand-rule" aria-hidden="true"></span>
+            <span class="brand-copy">Canal Oficial de<br />Recarga</span>
+          </a>
+          <button class="profile-button demo-action" type="button" aria-label="Perfil de demonstração">
+            <span class="profile-head" aria-hidden="true"></span>
+            <span class="profile-body" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <main id="top" class="content">
+        <section class="free-item" aria-labelledby="free-item-title">
+          <div class="free-item-copy">
+            <h1 id="free-item-title">Item Grátis</h1>
+            <p>Resgate aqui seus itens exclusivos<br />grátis</p>
+            <button class="button button-primary demo-action" type="button">Resgatar</button>
+          </div>
+          <div class="free-item-product">
+            <img src="img/item_gratis_pack.png" alt="Pacote de Arm..." />
+            <div class="product-label">Pacote de Arm... <span class="info-dot" aria-label="Informações">i</span></div>
+          </div>
+        </section>
+
+        <section class="event-section" aria-labelledby="event-title">
+          <h2 class="plain-section-title" id="event-title">Eventos especiais</h2>
+          <img class="event-banner" src="img/evento_bonus_tentativas.png" alt="Free Fire — Bônus nas Tentativas" />
+          <p class="event-caption">BÔNUS NAS TENTATIVAS!</p>
+        </section>
+
+        <section class="form-section login-section" aria-labelledby="login-title">
+          <h2 id="login-title" class="step-title"><span>1</span> Login</h2>
+          <div class="login-card" id="login-card">
+            <label for="player-id">ID do jogador <button class="question-mark demo-action" type="button" aria-label="Ajuda sobre o ID do jogador">?</button></label>
+            <div class="login-line">
+              <input id="player-id" inputmode="numeric" autocomplete="off" placeholder="Insira o ID de jogador aqui" />
+              <button id="login-button" class="button button-primary" type="button">Login</button>
+            </div>
+            <p class="local-state" id="login-state" aria-live="polite"></p>
+          </div>
+          <div class="divider"><span>Ou entre com sua conta de jogo</span></div>
+          <div class="social-list" id="social-list" aria-label="Redes sociais de demonstração"></div>
+        </section>
+
+        <section class="form-section recharge-section" aria-labelledby="recharge-title">
+          <h2 id="recharge-title" class="step-title"><span>2</span> Valor de Recarga</h2>
+          <div class="tabs" role="tablist" aria-label="Tipo de recarga">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="buy">Comprar</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tab="redeem">Resgatar</button>
+          </div>
+
+          <div class="tab-panel" id="buy-panel" role="tabpanel">
+            <div class="diamond-grid" id="diamond-grid" aria-label="Opções de diamantes"></div>
+            <div class="heading-with-line"><h3>Ofertas especiais</h3><span></span></div>
+            <div class="offer-grid" id="offer-grid"></div>
+            <button id="toggle-offers" class="more-button" type="button">Ver mais <span aria-hidden="true">⌄</span></button>
+          </div>
+
+          <div class="tab-panel is-hidden" id="redeem-panel" role="tabpanel">
+            <div class="voucher-intro">
+              <img src="img/cartao_pre_pago_garena.png" alt="Cartão pré-pago Garena" />
+              <div><h3>Cartão pré-pago Garena</h3><p>Resgatar o código do seu voucher</p></div>
+              <span class="promo-badge"><i></i> PROMO</span>
+            </div>
+            <button class="button button-primary full-button demo-action" type="button">Login</button>
+            <div class="redeem-list" id="redeem-list" aria-label="Pacotes disponíveis"></div>
+          </div>
+        </section>
+
+        <section class="form-section payments-section" aria-labelledby="payment-title">
+          <h2 id="payment-title" class="step-title"><span>3</span> Método de pagamento</h2>
+          <div class="payment-grid" id="payment-grid" aria-label="Métodos de pagamento de demonstração"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© Garena Online. Todos os direitos reservados.</p>
+        <nav aria-label="Links institucionais">
+          <a href="#top">FAQ</a><span>|</span><a href="#top">Central de Ajuda</a><span>|</span><a href="#top">Termos e condições</a><span>|</span><a href="#top">Política de privacidade</a>
+        </nav>
+      </footer>
+    </div>
+    <div id="demo-toast" class="toast" role="status" aria-live="polite">Modo demonstração — nenhuma informação foi enviada.</div>
+    <script src="js/mockup.js"></script>
+  </body>
+</html>

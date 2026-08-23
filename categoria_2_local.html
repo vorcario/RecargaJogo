@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/mockup.css"><link rel="stylesheet" href="css/category-content.css"></head>
+<body><main class="content category-shell">
+  <div class="tabs" role="tablist"><button class="tab is-active" type="button" data-tab="buy">Comprar</button><button class="tab" type="button" data-tab="redeem">Resgatar</button></div>
+  <div id="buy-panel">
+    <div class="diamond-grid"><button class="diamond-option" type="button"><i class="diamond-shape"></i>65</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>100</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>310</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>520</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>1.060</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>2.180</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>5.600</button><button class="diamond-option" type="button"><i class="diamond-shape"></i>22.400</button></div>
+    <div class="heading-with-line"><h3>Ofertas especiais</h3><span></span></div>
+    <div class="offer-grid" id="offer-grid">
+      <button class="offer-card" type="button"><img src="img/assinatura_semanal.png" alt="Assinatura Semanal"><span class="offer-name">Assinatura Semanal<i class="offer-info">i</i></span></button>
+      <button class="offer-card" type="button"><img src="img/assinatura_mensal.png" alt="Assinatura Mensal"><span class="offer-name">Assinatura Mensal<i class="offer-info">i</i></span></button>
+      <button class="offer-card" type="button"><img src="img/passe_booyah.png" alt="Passe Booyah"><span class="offer-name">Passe Booyah<i class="offer-info">i</i></span></button>
+      <button class="offer-card" type="button"><img src="img/passe_booyah_premium_plus.png" alt="Passe Booyah Premium Plus"><span class="offer-name">Passe Booyah Premium Plus<i class="offer-info">i</i></span></button>
+      <button class="offer-card is-hidden" type="button" id="weekly-lite"><img src="img/semanal_economica.png" alt="Semanal Econômica"><span class="offer-name">Semanal Econômica<i class="offer-info">i</i></span></button>
+    </div><button id="toggle-offers" class="more-button" type="button">Ver mais <span>⌄</span></button>
+  </div>
+  <div id="redeem-panel" class="is-hidden">
+    <div class="voucher-intro"><img src="img/cartao_pre_pago_garena.png" alt="Cartão pré-pago Garena"><div><h3>Cartão pré-pago Garena</h3><p>Resgatar o código do seu voucher</p></div><span class="promo-badge"><i></i>PROMO</span></div>
+    <button class="button button-primary full-button category-action" type="button">Login</button>
+    <div class="redeem-list">
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">100 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 10</small></span><strong class="redeem-price">R$ 4,49</strong></button>
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">310 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 31</small></span><strong class="redeem-price">R$ 13,99</strong></button>
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">520 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 52</small></span><strong class="redeem-price">R$ 20,99</strong></button>
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">1.060 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 106</small></span><strong class="redeem-price">R$ 44,99</strong></button>
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">2.180 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 218</small></span><strong class="redeem-price">R$ 87,99</strong></button>
+      <button class="redeem-row" type="button"><i class="diamond-shape"></i><span><strong class="redeem-amount">5.600 Diamante</strong><small class="redeem-bonus">+ Bônus Geral 560</small></span><strong class="redeem-price">R$ 209,99</strong></button>
+    </div>
+  </div>
+</main><div id="category-toast" class="toast" role="status"></div><script src="js/category-interactions.js"></script></body></html>
