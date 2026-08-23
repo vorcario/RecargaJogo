@@ -1,4 +1,3 @@
 __pycache__/
 *.pyc
-local_layout_server*.py
 local_mockup_server.py
